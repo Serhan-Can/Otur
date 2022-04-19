@@ -30,12 +30,12 @@ public class RatingOfLandlord {
         ratings.add(rating);
     }
 
-    public int getOverralRatingOutOf10() {
-        int sum = 0;
+    public double getOverralRatingOutOf10() {
+        double sum = 0;
         for(int i =0;i<ratings.size();i++){
             sum += ratings.get(i);
         }
-        int average = sum/ratings.size();
+        double average = sum/ratings.size();
         return average;
     }
 
