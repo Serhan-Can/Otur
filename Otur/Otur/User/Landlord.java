@@ -48,7 +48,7 @@ public class Landlord {
 		ratingOfLandlord.addRating(integer);
 	}
 
-	public int getAverageWeigth() {
+	public double getAverageWeigth() {   
 		return ratingOfLandlord.getOverralRatingOutOf10();
 	}
 
