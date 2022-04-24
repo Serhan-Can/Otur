@@ -3,21 +3,21 @@ package User;
 import java.util.*;
 
 public class RatingOfLandlord {
-    int overralRatingOutOf10;
+    double overralRatingOutOf10;
     ArrayList<Integer> ratings;
     ArrayList<String> comments;
 
 
 
     public RatingOfLandlord() {
-        ratings = new ArrayList<Integer>();
-        comments = new ArrayList<String>();
+        ratings = new ArrayList<>();
+        comments = new ArrayList<>();
     }
 
     public String getComments() {
         String comments = "";
-        for (int i = 0; i < this.comments.size(); i++) {
-            comments += this.comments.get(i);
+        for (String comment : this.comments) {
+            comments += comment;
         }
         return comments;
     }
@@ -32,11 +32,11 @@ public class RatingOfLandlord {
 
     public double getOverralRatingOutOf10() {
         double sum = 0;
-        for(int i =0;i<ratings.size();i++){
-            sum += ratings.get(i);
+        for (Integer rating : ratings) {
+            sum += rating;
         }
-        double average = sum/ratings.size();
-        return average;
+        this.overralRatingOutOf10 = sum/ratings.size();
+        return this.overralRatingOutOf10;
     }
 
     public ArrayList<Integer> getRatings() {
