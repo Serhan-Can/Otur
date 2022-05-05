@@ -1,53 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/newbackground"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/otur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:text="Otur"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otur"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="20dp"
+        android:hint="Phone Number"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@id/phoneNumber"
+        android:background="#30ffffff"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="20dp"
+        />
+
     <Button
-        android:id="@+id/accommodation"
-        android:layout_width="281dp"
-        android:layout_height="215dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="432dp"
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#2196F3"
-        android:text="I want to find an accomodation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Log In"
+        android:textSize="26dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="233dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="97dp"
-        android:text="Home Page"
-        android:textSize="40.0dip"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noAccount"
+        android:layout_below="@id/loginbtn"
+        android:text="Don't you have an account? Get one now."
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:textSize="16dp"
+        />
 
     <Button
-        android:id="@+id/roommate"
-        android:layout_width="279dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="212dp"
+        android:id="@+id/signupbtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/noAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
         android:backgroundTint="#2196F3"
-        android:text="I want to find a roommate"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Sign Up"
+        android:textSize="26dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="189dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#2196F3"
-        android:text="Go to my profile"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbackground"
+    tools:context=".AddNewHouse">
+
+    <TextView
+        android:id="@+id/newHouseForRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New House For Rent"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/newHouseForRent"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Title"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+         />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Location"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/rent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/location"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Rent in TL"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rent"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Size in m2"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/size"
+        android:text="Number of Rooms"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView5"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Studio(1+0)" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1+1" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2+1" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3+1" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4+1" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="More" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/checkBox23"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:text="No Entrance Floor" />
+
+        <CheckBox
+            android:id="@+id/checkBox26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No Roof Floor" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/floorIfItIsAnApartment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearlayout"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Floor if it is an apartment"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/floorIfItIsAnApartment"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Not furnished" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Furnished" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/radioGroup2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="East facade" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="West facade" />
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="North facade" />
+
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="South facade" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup3"
+        android:text="Heating type:"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView6"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Natural gas" />
+
+        <RadioButton
+            android:id="@+id/radioButton17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Central Heating" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/numberOfBathrooms"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/radioGroup4"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Number of bathrooms"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/ageOfTheBuilding"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/numberOfBathrooms"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Age of the building"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/ageOfTheBuilding"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/addNewHousebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Add new house" />
+    </LinearLayout>
+
+
+</RelativeLayout>
