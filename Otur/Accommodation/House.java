@@ -112,19 +112,7 @@ public class House extends Accommodation  {
     
     public static void filterHouses(ArrayList<House> houses, boolean isApartment, String noOfRooms, int sizeUnderBound, int sizeUpperBound, int rent, boolean furnish) {
         ArrayList<House> filteredHouses = new ArrayList<>();
-        // int noOfRooms;
-        // Address address;
-        // double size;
-        // int rent;
-        // boolean isApartment;
-        // int noOfResidents;
-        //isApartment
-        //number of rooms
-        //size
-        //budget
-        //distance
-        //furnish
-        //anyResident
+       
         for (int i = 0; i < houses.size(); i++) {
             if (isApartment != houses.get(i).isApartment) {
                 houses.get(i).noOfFiltersApplied++;
