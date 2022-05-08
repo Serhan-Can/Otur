@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import User.*;
 
-public class House extends Accommodation implements Comparable {
+public class House extends Accommodation  {
     String noOfRooms;
-    int noOfFiltersApplied = 0;
+    int noOfFiltersApplied ;
     double size;
     int rent;
     boolean isApartment;
@@ -15,6 +15,7 @@ public class House extends Accommodation implements Comparable {
     Landlord lord;
     
     public House() {
+        noOfFiltersApplied = 0;
     }
     
     public House(String city, String street, String district, String addressExplanation, int houseNo,
@@ -25,11 +26,15 @@ public class House extends Accommodation implements Comparable {
         this.rent = rent;
         this.isApartment = isApartment;
         this.lord = lord;
+        noOfFiltersApplied = 0;
     }
     
     public void rentHouse() {
         lord.rentHouse(this);
         this.noOfResidents++;
+    }
+    public void setNoOfFiltersApplied(int a){
+        this.noOfFiltersApplied = a;
     }
     
     public int getNoOfResidents() {
@@ -149,10 +154,12 @@ public class House extends Accommodation implements Comparable {
             }
         }*/
     }
-    
-    public int compareTo(Object o) {
-    
+    public void resetFilters(ArrayList<House> houses){
+        for(int i = 0;i<houses.size();i++){
+            houses.get(i).setNoOfFiltersApplied(0);
+        }
     }
+   
     
     @Override
     String getType() {
