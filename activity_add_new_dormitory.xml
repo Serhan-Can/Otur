@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbackground"
+    tools:context=".AddNewDormitory">
+
+    <TextView
+        android:id="@+id/newDormitoryForRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Dormitory For Rent"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/newDormitoryForRent"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Title"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Location"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/monthlyFee"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/location"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Monthly fee in TL"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/monthlyFee"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Size in m2"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/roomCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/size"
+        android:layout_marginStart="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Room Capacity"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/roomCapacity"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Private bathroom" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Shared bathroom" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kitchen" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No kitchen" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/radioGroup2"
+        android:layout_marginTop="270dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/addNewDormitorybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Add new dormitory" />
+    </LinearLayout>
+
+
+</RelativeLayout>
