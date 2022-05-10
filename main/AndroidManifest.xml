@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Otur"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".RoommateInfo"
+            android:exported="false" />
+        <activity
+            android:name=".FilteredRoommates"
+            android:exported="false" />
+        <activity
+            android:name=".StudentChangeFeatures"
+            android:exported="false" />
+        <activity
+            android:name=".FilteredDormitories"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordLandlord"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewDormitory"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewHouse"
+            android:exported="false" />
+        <activity
+            android:name=".CurrentAccommodationsForRent"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfileLandlord"
+            android:exported="false" />
+        <activity
+            android:name=".LandlordSignup"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordStudent"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfileStudent"
+            android:exported="false" />
+        <activity
+            android:name=".StudentSignupFeatures"
+            android:exported="false" />
+        <activity
+            android:name=".StudentSignup"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RoommateFilter"
+            android:exported="false" />
+        <activity
+            android:name=".HouseInfo"
+            android:exported="false" />
+        <activity
+            android:name=".FilteredHouses"
+            android:exported="false" />
+        <activity
+            android:name=".DormitoryFilter"
+            android:exported="false" />
+        <activity
+            android:name=".HouseFilter"
+            android:exported="false" />
+        <activity
+            android:name=".Accommodation2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+    </application>
+
+</manifest>
