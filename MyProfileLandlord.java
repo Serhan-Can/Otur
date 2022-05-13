@@ -1,4 +1,4 @@
-package com.example.otur;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -29,6 +29,7 @@ public class MyProfileLandlord extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MyProfileLandlord.this,ChangePasswordLandlord.class);
+                startActivity(intent);
             }
         });
     }

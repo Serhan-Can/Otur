@@ -1,4 +1,4 @@
-package com.example.otur;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
